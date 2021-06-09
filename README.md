@@ -29,8 +29,7 @@ Peak files containing the OCRs between replicates:
 - Male_rep1_vs_rep2.idr0.05.bfilt.narrowPeak.gz
 
 ## Selection and filtering of consensus OCR peaks
-
-
+**Homer_merge_to_bed.sh** merge the output peak files from ATAC-seq analysis to obtain a consensus peak file between all the replicates, which is transformed into bed format for downstream footprinting analysis.
 
 
 ## ChIP-seq analysis
