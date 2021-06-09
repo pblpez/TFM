@@ -42,8 +42,9 @@ $ annotatePeaks.pl <BED file with peaks> <reference genome (mm10)> -gtf <gtf fil
 ```
 The input PPMs specified in the -m option were obtained by performing HOMER *de novo* analysis on the corresponding set of peaks to be annotated.
 ```
-findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output directory> -size given
+$ findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output directory> -size given
 ```
+## Footprinting analysis
 
 
 ## RNA-seq analysis
