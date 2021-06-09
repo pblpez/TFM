@@ -35,6 +35,16 @@ Peak files containing the OCRs between replicates:
 
 **OCR_histone_mark_filter.sh** splits the H3K27ac ChIP-seq peaks into a promoter and an enhancer subset. The different consensus sets of peaks from the different histone mark ChIP-seq analysed are intersected with the consensus ATAC-seq OCRs obtained with **Homer_merge_to_bed.sh**.
 
+## Peak annotation
+Annotation of bed files with consensus peak regions was performed using HOMER annotatePeaks.pl function. -m option was used when annotating peak files from ChIP-seq performed for individual TFs. This option allowed to introduce position probability matrices (PPMs) containing motif information.
+```
+$ annotatePeaks.pl <BED file with peaks> <reference genome (mm10)> -gtf <gtf file with annotations> -m <motif> > <output file>
+```
+The input PPMs specified in the -m option were obtained by performing HOMER *de novo* analysis on the corresponding set of peaks to be annotated.
+```
+findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output directory> -size given
+```
+
 
 ## RNA-seq analysis
 ## scRNA-seq analysis
