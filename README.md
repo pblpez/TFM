@@ -33,6 +33,8 @@ Peak files containing the OCRs between replicates:
 ## Selection and filtering of consensus OCR peaks
 **Homer_merge_to_bed.sh** merge two or more input peak files to obtain a consensus peak file between all the replicates, which is transformed into bed format. This script was used to obtain the consensus OCRs between the ATAC-seq analysed replicates. It was used aswell to obtain the consensus peaks between the replicates of each histone mark analysed by ChIP-seq.
 
+**OCR_histone_mark_filter.sh** splits the H3K27ac ChIP-seq peaks into a promoter and an enhancer subset. The different consensus sets of peaks from the different histone mark ChIP-seq analysed are intersected with the consensus ATAC-seq OCRs obtained with **Homer_merge_to_bed.sh**.
+
 
 ## RNA-seq analysis
 ## scRNA-seq analysis
