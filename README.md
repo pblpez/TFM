@@ -44,7 +44,7 @@ The input PPMs specified in the -m option were obtained by performing HOMER *de 
 $ findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output directory> -size given
 ```
 ## Footprinting analysis
-
+**ATACorrect.sh** runs TOBIAS ATACorrect function for each replicate in each of the assessed sets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh**.
 
 ## RNA-seq analysis
 ## scRNA-seq analysis
