@@ -1,7 +1,6 @@
-# TFM
+# Introduction
 
-# DESCRIPCIÓN DEL REPOSITORIO
-In this repository is explained the methodology applied in the master's thesis entitled "Deciphering gene regulation network in normal mouse pancreas through a multi-omic integrative approach" along with the scripts and command line tools applied.
+In this repository is explained the code used to perform the analyses and represent the results described in the master's thesis entitled "Deciphering a gene regulation network in normal mouse pancreas through a multi-omic integrative approach". Each subsection of this repository is explained the "Methods" section of the manuscript. Here are overviewed the scripts and command line tools applied to perform each analysis. Further description on how to run each script, its funtionality and requirements is included in the corresponding script.
 
 ## ATAC-seq analysis
 To analyse the ATAC-seq data for Open Chromatin Regions (OCRs) detection, the ENCONDE ATAC-seq pipeline developed by Anshul Kundaje's laboratory was used. Two female and two male replicates were analysed separately.
