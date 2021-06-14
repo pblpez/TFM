@@ -54,7 +54,12 @@ The input PPMs specified in the -m option were obtained by performing HOMER *de 
 $ findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output directory> -size given
 ```
 ## Footprinting analysis
-It is recommended to create a parent directory with the input files for **ATACorrect.sh** and run all the following scripts from its location in the order specified here. At the end, several organized directories and subdirectories for each step will be obtained with the corresponding output files.
+It is recommended to create a parent directory with the needed input files and run all the following scripts from its location in the order specified here. At the end, several organized directories and subdirectories for each step will be obtained with the corresponding output files. The required input files are:
+- Input BAM files containing the mapped ATAC-seq reads. The associated bam.bai index should be in the same directory (else it will be created).
+- Input BED files containing the peak regions of interest for performing footprinting analysis. These peak files should be annotated to run BINDetect correctly.
+- Input FASTA file containing the reference genome to which the sequencing reads were mapped.
+- Input BED file containing the blacklisted regions in the reference genome.
+- Input motifs in either PFM, JASPAR or MEME format to scan for binding sites.
 
 **ATACorrect.sh** runs TOBIAS ATACorrect function for each replicate in each of the assessed sets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh**.
 
