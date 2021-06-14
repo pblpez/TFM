@@ -63,7 +63,7 @@ It is recommended to create a parent directory with the needed input files and r
 
 **ATACorrect.sh** runs TOBIAS ATACorrect function for each replicate in each of the assessed sets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh**.
 
-**ScoreBigwig.sh** runs TOBIAS ScoreBigwig function for each replicate in each of the assessed ssets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh**.
+**ScoreBigwig.sh** runs TOBIAS ScoreBigwig function for each replicate in each of the assessed ssets of peaks.
 
 ## RNA-seq analysis
 ## scRNA-seq analysis
