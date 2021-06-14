@@ -21,7 +21,7 @@ Cromwell Output Organizer (Croo) can be used to organize the outputs from Caper 
 ```
 $ croo [Metadata JSON file]
 ```
-The output files used for the different analyses performed in this work are specified here, for more information regarding the outputs see https://github.com/ENCODE-DCC/atac-seq-pipeline. 
+The output files used for the footprinting analysis performed in this work are specified here, for more information regarding the outputs see https://github.com/ENCODE-DCC/atac-seq-pipeline. 
 <br />
 <br />
 Quality Control html report.
