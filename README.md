@@ -17,7 +17,14 @@ For detailed information on how to configure and run the ENCODE ATAC-seq pipelin
 **Output files**
 <br />
 <br />
-The output files needed for subsequent footprint analysis obtained from this analysis are:
+Cromwell Output Organizer (Croo) can be used to organize the outputs from Caper (A metadata.json file can be found on Caper's output directory). Croo is installed together with pipeline's Conda environment. For more information see https://github.com/ENCODE-DCC/croo.
+```
+$ croo [Metadata JSON file]
+```
+The output files used for the different analyses performed in this work are specified here, for more information regarding the outputs see https://github.com/ENCODE-DCC/atac-seq-pipeline. 
+<br />
+<br />
+Quality Control html report.
 <br />
 <br />
 Filtered BAM files containing the reads mapped to the reference genome:
