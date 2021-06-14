@@ -61,9 +61,11 @@ It is recommended to create a parent directory with the needed input files and r
 - Input BED file containing the blacklisted regions in the reference genome.
 - Input motifs in either PFM, JASPAR or MEME format to scan for binding sites.
 
-**ATACorrect.sh** runs TOBIAS ATACorrect function for each replicate in each of the assessed sets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh**.
+**ATACorrect.sh** runs TOBIAS ATACorrect function for each replicate in each of the assessed sets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh** to correct the Tn5 inherent cutting pattern bias.
 
-**ScoreBigwig.sh** runs TOBIAS ScoreBigwig function for each replicate in each of the assessed ssets of peaks.
+**ScoreBigwig.sh** runs TOBIAS ScoreBigwig function for each replicate in each of the assessed sets of peaks to calculate footprint scores.
+
+**BINDetect.sh** runs TOBIAS BINDetect function for each replicate in each of the assessed sets of peaks to estimate specific TFBS based on the input motifs.
 
 ## RNA-seq analysis
 ## scRNA-seq analysis
