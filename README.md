@@ -60,6 +60,7 @@ It is recommended to create a parent directory with the needed input files and r
 - Input FASTA file containing the reference genome to which the sequencing reads were mapped.
 - Input BED file containing the blacklisted regions in the reference genome.
 - Input motifs in either PFM, JASPAR or MEME format to scan for binding sites.
+- Input txt with the names of acinar-expressed TFs to restrict the identified TFBS.
 
 **ATACorrect.sh** runs TOBIAS ATACorrect function for each replicate in each of the assessed sets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh** to correct the Tn5 inherent cutting pattern bias.
 
