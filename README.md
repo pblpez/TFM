@@ -68,5 +68,7 @@ It is recommended to create a parent directory with the needed input files and r
 
 **BINDetect.sh** runs TOBIAS BINDetect function for each replicate in each of the assessed sets of peaks to estimate specific TFBS based on the input motifs.
 
+**Acinar_expressed_bound_TF_selection** copies the BED files corresponding to the sites bound by the specified acinar-expressed TFs.
+
 ## RNA-seq analysis
 ## scRNA-seq analysis
