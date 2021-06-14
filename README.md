@@ -55,6 +55,7 @@ $ findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output di
 ```
 ## Footprinting analysis
 It is recommended to create a parent directory with the input files for **ATACorrect.sh** and run all the following scripts from its location in the order specified here. At the end, several organized directories and subdirectories for each step will be obtained with the corresponding output files.
+
 **ATACorrect.sh** runs TOBIAS ATACorrect function for each replicate in each of the assessed sets of peaks obtained from **Homer_merge_to_bed.sh** and **OCR_histone_mark_filter.sh**.
 
 ## RNA-seq analysis
