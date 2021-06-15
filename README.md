@@ -77,6 +77,12 @@ It is recommended to create a parent directory with the needed input files and r
 ## Visualization
 **PlotAggregate** runs TOBIAS PlotAggregate function for each replicate in each of the assessed sets of peaks to generate aggregated views of footprint signals across regions.
 
+**Venn_diagram.R** creates a venn diagram representing the overlap between different sets of peaks.
+
+**Genomic_locations.R** creates a barplot representing the genomic location distribution of the assessed sets of peaks.
+
+**
+
 
 ## Statistical analysis
 
