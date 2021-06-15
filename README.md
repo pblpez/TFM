@@ -89,6 +89,10 @@ It is recommended to create a parent directory with the needed input files and r
 ## Statistical analysis
 **Expression_topolgy_scores_correlation.R** creates a correlation plot based on Pearson correlation coefficient. It was used to determine the linear correlation between different topological measures (degree and betweness centrality), as well as between topological measures and TF expression levels.
 
+**Network_chip_consistency.sh** extracts the target genes names from "edge" tables of each consensus individual TF network obtained with Cytoscape. Next, filters the network and ChIP-seq identified target genes according to their expression levels (genes with expression < 1 RPKM in normal mouse pancreas are discarded). Finally, compares both filtered lists of target genes to determine targets identified exclusively by network or ChIP approach and consistently identified by both approaches.
+
+
+
 
 ## RNA-seq analysis
 ## scRNA-seq analysis
