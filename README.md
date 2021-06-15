@@ -84,18 +84,10 @@ It is recommended to create a parent directory with the needed input files and r
 
 **CreateNetwork_individual_TF.sh** runs TOBIAS CreateNetwork function for each replicate in each of the assessed sets of peaks to model the interactions between individual TFs and their target genes to build networks consisting on individual TFs and all their target genes.
 
-**PlotAggregate** runs TOBIAS PlotAggregate function for each replicate in each of the assessed sets of peaks to generate aggregated views of footprint signals across regions.
-
-## Visualization
-
-
-
-
-**Piechart3D**
-
+**PlotAggregate.R** runs TOBIAS PlotAggregate function for each replicate in each of the assessed sets of peaks to generate aggregated views of footprint signals across regions.
 
 ## Statistical analysis
-
+**Expression_topolgy_scores_correlation.R** creates a correlation plot based on Pearson correlation coefficient. It was used to determine the linear correlation between different topological measures (degree and betweness centrality), as well as between topological measures and TF expression levels.
 
 
 ## RNA-seq analysis
