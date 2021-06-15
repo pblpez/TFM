@@ -70,7 +70,9 @@ It is recommended to create a parent directory with the needed input files and r
 
 **Acinar_expressed_bound_TF_selection.sh** copies the BED files corresponding to the sites bound by the specified acinar-expressed TFs.
 
-**TFBS_footprint_format.sh** correctly formats the previously selected BED files to be used as input for **CreateNetwork.sh**
+**TFBS_footprint_format.sh** correctly formats the previously selected BED files to be used as input for **CreateNetwork.sh** and **CreatenNetwork_individual_TF.sh**.
+
+**Origin_file_maker.sh** generates the origin files needed for **CreateNetwork.sh** and **CreatenNetwork_individual_TF.sh**.
 
 
 ## RNA-seq analysis
