@@ -56,8 +56,7 @@ The input PPMs specified in the -m option were obtained by performing HOMER *de 
 ```
 $ findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output directory> -size given
 ```
-<br />
-<br />
+
 **Genomic_locations.R** creates a barplot representing the genomic location distribution of the assessed sets of peaks.
 
 ## Footprinting analysis
