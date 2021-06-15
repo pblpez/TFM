@@ -44,8 +44,11 @@ Peak files containing the OCRs between replicates:
 
 **OCR_histone_mark_filter.sh** splits the H3K27ac ChIP-seq peaks into a promoter and an enhancer subset. The different consensus sets of peaks from the different histone mark ChIP-seq analysed are intersected with the consensus ATAC-seq OCRs obtained with **Homer_merge_to_bed.sh**.
 
+**Venn_diagram.R** creates a venn diagram representing the overlap between different sets of peaks.
+
 ## Peak annotation
 Annotation of bed files with consensus peak regions was performed using HOMER annotatePeaks.pl function. -m option was used to annotate peak files from ChIP-seq performed for individual TFs. This option allowed to introduce position probability matrices (PPMs) containing motif information.
+
 ```
 $ annotatePeaks.pl <BED file with peaks> <reference genome (mm10)> -gtf <gtf file with annotations> -m <motif> > <output file>
 ```
@@ -53,6 +56,9 @@ The input PPMs specified in the -m option were obtained by performing HOMER *de 
 ```
 $ findMotifsGenome.pl <BED file with peaks> <reference genome (mm10)> <output directory> -size given
 ```
+
+**Genomic_locations.R** creates a barplot representing the genomic location distribution of the assessed sets of peaks.
+
 ## Footprinting analysis
 It is recommended to create a parent directory with the needed input files and run all the following scripts from its location in the order specified here. At the end, several organized directories and subdirectories for each step will be obtained with the corresponding output files. The required input files are:
 - Input BAM files containing the mapped ATAC-seq reads. The associated bam.bai index should be in the same directory (else it will be created).
@@ -74,14 +80,18 @@ It is recommended to create a parent directory with the needed input files and r
 
 **Origin_file_maker.sh** generates the origin files needed for **CreateNetwork.sh** and **CreateNetwork_individual_TF.sh**.
 
-## Visualization
+**CreateNetwork.sh** runs TOBIAS CreateNetwork function for each replicate in each of the assessed sets of peaks to model de interactions between the different TFs selected as acinar-expressed to build TF-TF networks, or between these TFs and all their targets to build global TF-target genes networks.
+
+**CreateNetwork_individual_TF.sh** runs TOBIAS CreateNetwork function for each replicate in each of the assessed sets of peaks to model the interactions between individual TFs and their target genes to build networks consisting on individual TFs and all their target genes.
+
 **PlotAggregate** runs TOBIAS PlotAggregate function for each replicate in each of the assessed sets of peaks to generate aggregated views of footprint signals across regions.
 
-**Venn_diagram.R** creates a venn diagram representing the overlap between different sets of peaks.
+## Visualization
 
-**Genomic_locations.R** creates a barplot representing the genomic location distribution of the assessed sets of peaks.
 
-**
+
+
+**Piechart3D**
 
 
 ## Statistical analysis
