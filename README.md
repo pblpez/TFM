@@ -72,7 +72,14 @@ It is recommended to create a parent directory with the needed input files and r
 
 **TFBS_footprint_format.sh** correctly formats the previously selected BED files to be used as input for **CreateNetwork.sh** and **CreatenNetwork_individual_TF.sh**.
 
-**Origin_file_maker.sh** generates the origin files needed for **CreateNetwork.sh** and **CreatenNetwork_individual_TF.sh**.
+**Origin_file_maker.sh** generates the origin files needed for **CreateNetwork.sh** and **CreateNetwork_individual_TF.sh**.
+
+## Visualization
+**PlotAggregate** runs TOBIAS PlotAggregate function for each replicate in each of the assessed sets of peaks to generate aggregated views of footprint signals across regions.
+
+
+## Statistical analysis
+
 
 
 ## RNA-seq analysis
