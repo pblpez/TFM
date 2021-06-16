@@ -93,4 +93,6 @@ It is recommended to create a parent directory with the needed input files and r
 
 **Common_targets_network_chip_shuffled.sh** generates random permutations of the TF ChIP-seq peak regions throught the reference genome. The permuted regions are annotated and associated to target genes based on the nearest TSS. The identified target genes are compared with target genes identified by individual TF network approach to determine the number of common genes between network approach and shuffled ChIP-seq regions.
 
-**
+**Observed_expected_matrices.sh** generates matrices with the observed and expected number of overlaps between the target genes identified by individual TF network approach and by TF ChIP-seq approach. This is the input needed to run **Consistent_results_significance.R**.
+
+**Consistent_results_significance.R**
