@@ -95,4 +95,4 @@ It is recommended to create a parent directory with the needed input files and r
 
 **Observed_expected_matrices.sh** generates matrices with the observed and expected number of overlaps between the target genes identified by individual TF network approach and by TF ChIP-seq approach. This is the input needed to run **Consistent_results_significance.R**.
 
-**Consistent_results_significance.R**
+**Consistent_results_significance.R** performs Pearson's Chi-squared test to determine the statistical significance of the obtaiened common results between network and ChIP-seq approaches.
