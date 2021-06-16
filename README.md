@@ -93,6 +93,7 @@ It is recommended to create a parent directory with the needed input files and r
 
 **Heatmap_network_chip_consistency.R** creates a heatmap representing the percentage of target genes identified in individual TF networks that are also identified by ChIP-seq analysis of the same TFs.
 
+**Common_targets_network_chip_shuffled.sh** generates random permutations of the TF ChIP-seq peak regions throught the reference genome. The permuted regions are annotated and associated to target genes based on the nearest TSS. The identified target genes are compared with target genes identified by individual TF network approach to determine the number of common genes between network approach and shuffled ChIP-seq regions.
 
 
 ## RNA-seq analysis
