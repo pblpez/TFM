@@ -37,8 +37,6 @@ Peak files containing the OCRs between replicates:
 - Female_rep1_vs_rep2.idr0.05.bfilt.narrowPeak.gz
 - Male_rep1_vs_rep2.idr0.05.bfilt.narrowPeak.gz
 
-## ChIP-seq analysis
-
 ## Selection and filtering of consensus OCR peaks
 **Homer_merge_to_bed.sh** merge two or more input peak files to obtain a consensus peak file between all the replicates in bed format. This script was used to obtain the consensus OCRs between the ATAC-seq analysed replicates. It was used aswell to obtain the consensus peaks between the replicates of each histone mark analysed by ChIP-seq.
 
@@ -95,6 +93,4 @@ It is recommended to create a parent directory with the needed input files and r
 
 **Common_targets_network_chip_shuffled.sh** generates random permutations of the TF ChIP-seq peak regions throught the reference genome. The permuted regions are annotated and associated to target genes based on the nearest TSS. The identified target genes are compared with target genes identified by individual TF network approach to determine the number of common genes between network approach and shuffled ChIP-seq regions.
 
-
-## RNA-seq analysis
-## scRNA-seq analysis
+**
