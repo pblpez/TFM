@@ -44,7 +44,7 @@ Peak files containing the OCRs between replicates:
 
 **OCR_histone_mark_filter.sh** splits the H3K27ac ChIP-seq peaks into a promoter and an enhancer subset. The different consensus sets of peaks from the different histone mark ChIP-seq analysed are intersected with the consensus ATAC-seq OCRs obtained with **Homer_merge_to_bed.sh**.
 
-**Venn_diagram.R** creates a venn diagram representing the overlap between different sets of peaks.
+**Peak_overlap.R** creates a venn diagram representing the overlap between different sets of peaks.
 
 ## Peak annotation
 Annotation of bed files with consensus peak regions was performed using HOMER annotatePeaks.pl function. -m option was used to annotate peak files from ChIP-seq performed for individual TFs. This option allowed to introduce position probability matrices (PPMs) containing motif information.
@@ -91,6 +91,7 @@ It is recommended to create a parent directory with the needed input files and r
 
 **Network_chip_consistency.sh** extracts the target genes names from "edge" tables of each consensus individual TF network obtained with Cytoscape. Secondly, filters the network and ChIP-seq identified target genes according to their expression levels (genes with expression < 1 RPKM in normal mouse pancreas are discarded). Next, compares both filtered lists of target genes to determine targets identified exclusively by network or ChIP approach and targets consistently identified by both approaches. The numbers of network and ChIP-exclusive target genes, as well as the common identified target genes are calculated. Finally, calculates the percentage of target genes identified by network approach that overlaps with target genes identified by ChIP-seq approach to determine the consistency of the results.
 
+**Heatmap_Network_chip_consistency.R** creates a heatmap representing the percentage of target genes identified in individual TF networks that are also identified by ChIP-seq analysis of the same TFs.
 
 
 
