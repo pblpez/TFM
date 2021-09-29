@@ -27,7 +27,7 @@
 ################################# REQUIREMENTS ################################
 #
 # This script should be run right after having executed correctly 
-# "TFBS_footprint_format".
+# "TFBS_footprint_format.sh".
 #
 ################################# MAIN ########################################
 
